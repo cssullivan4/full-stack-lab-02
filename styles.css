@@ -3,14 +3,17 @@ body {
     font-family: Tahoma, 'serif';
 }
 
-.header1 {
+h1 {
     color: white;
 }
+/*.header1 {
+    color: white;
+}*/
 
 .friend {
     background-color: #87c1ff;
 }
 
-.friend p {
+.friend h3 {
     text-transform: uppercase;
 }

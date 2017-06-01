@@ -1,17 +1,18 @@
-# Lab 02: 99 Lines of Code In The File - Part 1
-## Due: Thursday, June 1st
-##### Covalence 
+# Lab 03: 99 Lines of Code In The File - Part 2
+## Due: Friday, June 2nd, 09:00
+##### Covalence
 ###### Full Stack: Summer 2017
 
 ## Info
 * This lab consists of two parts
-* Today you will be doing most of the logic/coding
-* You will also get started on the graphical appearance
+* Today you will be transforming part 1 of the lab
+* You should copy your files from part 1 and paste them into your new project folder for part 2 (lab 3)
+* Except for one part of this lab where you are explicitly asked to delete, you will not be deleting or destroying anything from yesterday. You are simply changing/transitioning what you did yesterday into something more useful.
 
 ## Objectives
-* Create an array called `friends`. It will hold five of your friends' names.
-* For every friend in the friend array, you will want to `console.log` the descending chorus of this brand-new, never before seen song 100 times. The lyric must include your friend's name, and must be grammatically correct when we get down to 1. See the example output for more information.
-* In the HTML, set the page title to 99 Lines of Code In The File
+* You already have an array called `friends`. It holds five of your friends' names.
+* For every friend in the friend array, you have successfully used `console.log` to log the chorus line of the song 99 times.
+* In the HTML, the page title should be 99 Lines of Code In The File
 * Put an `h1` in the html body that says My Singing Friends
 * Put a `div` in the html body with a class of `friend`.
     * Inside the `div`, put 5 `p`.
@@ -22,27 +23,24 @@
     * Set a background color for class `friend`.
     * Target the paragraphs inside the `friend` class div and make them uppercase using only CSS.
     * You have stylistic freedom to make the page look good
+### New Objectives
+* Put a `button` in the HTML that says `Sing!`
+    * When you click the button, all the `console.log` statements from yesterday should happen. They SHOULD NOT happen before the button is clicked.
+* When you have the button setup and working correctly as described, then:
+    * Delete the `div` with class `friend` and the paragraphs it contains from your html file
+    * Go to your code where you are "singing the song" and change it as follows:
+        * For each of your friends, create a `div` with class `friend`
+        * Put an `h3` containing your friend's name in the div
+        * Then, instead of using `console.log` to put the song lyrics in the console, create a paragraph for each song lyric line and put that paragraph in the `friend` div.
+    * Edit your CSS. Instead of making `p` elements inside the div class `friend` uppercase, make `h3` elements uppercase
+* To Recap:
+    * The page should start out just showing a button labeled Sing!
+    * Nothing will be logged to the console
+    * Clicking the button will cause 5 `div` elements with class name `friend` to be added to the page, one for each of your friends
+    * Each div contains 99 paragraphs, each one representing a lyric line that you previously were logging to the console in part 1 of this lab.
 
 ## Hints
-* You will need to use two loops to accomplish this task
-    * One loop is nested inside the other
-
-## Turn In
-* As usual, make sure you save and then commit and push your work to GitHub.
-
-
-## Example Output
-``````````````````````````````
-JOHN:
-99 lines of code in the file, 99 lines of code; John strikes one out, clears it all out, 98 lines of code in the file
-98 lines of code in the file, 98 lines of code; John strikes one out, clears it all out, 97 lines of code in the file
-.......
-.......
-1 line of code in the file, 1 line of code; John strikes one out, clears it all out, no more lines of code in the file
-JANE:
-99 lines of code in the file, 99 lines of code; Jane strikes one out, clears it all out, 98 lines of code in the file
-98 lines of code in the file, 98 lines of code; Jane strikes one out, clears it all out, 97 lines of code in the file
-.......
-.......
-1 line of code in the file, 1 line of code; Jane strikes one out, clears it all out, no more lines of code in the file
-``````````````````````````````
+* You will be using DOM functions to complete this portion of the lab
+* Remember that elements can be added to other elements
+    * document.body.appendChild(someElement);
+    * someElement.appendChild(someOtherElement);
